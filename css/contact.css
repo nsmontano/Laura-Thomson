@@ -1,0 +1,181 @@
+.intro1{
+    text-align: center;
+}
+
+.intro1 p{
+    margin-bottom: 30px;
+}
+.intro1 h2{
+    margin-top: 35px;
+    position: relative;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.intro1 .big1{
+    font-family: calibri;
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    font-size: 7.5rem;
+    color: rgba(192, 192, 192,0.330);
+}
+/* PARTE IZQUIERDA */
+
+/*FORMULARIO*/
+.form{
+    background-color: white;
+    padding: 10px 0 0 10px;
+}
+input,textarea{
+    font-size: 2rem;
+    font-family: calirbi;
+}
+.up input{
+    margin: 20px 15px 5px 0;
+    width: 251px;
+    padding: 15px ;
+}
+.middle input{
+    margin: 20px 0 ;
+    width:520px;
+    padding: 15px ;
+}
+
+input::placeholder{
+    font-size: 2rem;
+    color: silver;
+}
+
+textarea::placeholder{
+    font-size: 2rem;
+    color: silver;
+    padding: 15px;
+}
+/*TEXT AREA*/
+#text{
+    width: 520px;
+}
+/*BOTON*/
+.btn{
+text-align: center;
+margin: 13px 0 0 60px;
+}
+
+.btn .enviar{
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    padding: 15px 42px;
+    font-size: 2rem;
+}
+
+/*redes*/
+
+.icono svg{
+    border-radius: 90%;
+    height: 80px;
+    width:80px ;
+    background-color: rgba(240, 193, 38, 0.185);
+    margin: 0 10px;
+    padding: 25px;
+}
+
+.icono{
+    text-align: center;
+    background-color: white;
+    padding: 20px 10px;
+    height: 95%;
+    /*ESPACIO ENTRE SI*/
+}
+
+.iconos1 svg{
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid rgb(179, 179, 179);
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+h3{
+    margin: 10px;
+    font-family: calibri;
+    color: rgb(141, 141, 141);
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    background-color: rgb(240, 240, 240);
+    padding: 30px;
+
+  }
+  
+  .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+ 
+  .item4 {
+    grid-row: 1 / span 2;
+  }
+  @media (max-width: 1200px) {
+ 
+    .intro1 .big1{
+     position: unset;
+     margin: 0;
+    }
+    .intro1 h2{
+        font-family: calibri;
+        margin: 0;
+        position: relative;
+        top: -50px;
+    }
+    .grid-container{
+        display: block;
+        padding: 30px;
+    }
+    .icono{
+        margin: 10px 0;
+    }
+    form {
+        position: relative;
+        left: 200px;
+      }
+}
+@media (max-width: 990px) {
+    .grid-container{
+        display: block;
+        padding: 30px;
+    }
+   
+    .up input{
+        width: 95%;
+    }
+    .middle input{
+        width: 97%;
+
+    }
+    textarea{
+        padding: 15px;
+        min-width: 97%;
+    }
+    .icono{
+        margin: 10px 0;
+    }
+    /*TEXT AREA*/
+    #text{
+      width: 381px;
+    }
+    form {
+        position: unset;
+      }
+}
+
+.form-control{
+    font-family: calibri;
+    font-size: 20px;
+}

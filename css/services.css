@@ -1,0 +1,186 @@
+.intro{
+    text-align: center;
+}
+
+.intro p{
+    margin-bottom: 30px;
+    margin: 10px;
+}
+
+.intro h2{
+    margin-top: 110px;
+    position: relative;
+    font-family: calibri;
+}
+.intro .big{
+    font-family: calibri;
+    position: absolute;
+    top: 15px;
+    left: 463px;
+    font-size: 7.5rem;
+    color: rgba(192, 192, 192,0.330);
+
+}
+/* CUADROS */
+.servicios{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px 100px 80px 90px;
+    background-color: rgb(247, 247, 247);
+}
+
+.servicios div{
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    margin: 17px;
+}
+
+.block{
+    text-align: center;
+    padding: 40px;
+}
+
+.block h3{
+    padding: 0;
+    margin: 5px;
+    font-size: 1.8rem;
+}
+.block p{
+    font-size: 1.5rem;
+}
+
+.iconos--servicios svg{
+    border-radius: 50%;
+    height: 8.5rem;
+    width: 8.5rem;
+    background-color: rgba(240, 193, 38,0.280);
+    margin: 0 10px;
+    padding: 20px;
+}
+
+/* SLIDE */
+.slider{
+    height: 300px;
+    width: 97%;
+    margin: 20px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(../img/slide.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position:  0 -150px;
+    outline: solid 5px rgb(251, 255, 0);
+}
+
+.slider ul{
+    text-align: center;
+    display: flex;
+    width: 503%;
+    padding: 0;
+    animation: slide 8s infinite alternate ease-in-out;
+}
+
+li{
+    width: 8%;
+    margin: auto;    
+    padding:20px 0;
+    list-style: none;
+    height: 300px;
+    color: white;
+}
+
+
+.slider img{
+    border-radius: 90% ;
+    height: 90px;
+    border: rgb(88, 88, 88) 6px solid;
+    width: 18%;
+    padding: 1px;
+    object-fit: cover;
+
+}
+
+/* ESPACIOS */
+
+.slider li h3{
+    margin: 0;
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    15%{margin-left: 0%;}
+
+    20%{margin-left: -100%;}
+    35%{margin-left: -100%;}
+
+    40%{margin-left: -200%;}
+    55%{margin-left: -200%;}
+
+    60%{margin-left: -300%;}
+    75%{margin-left: -300%;}
+
+    80%{margin-left: -400%;}
+    100%{margin-left:-400%;}
+}
+
+
+@media (max-width:1100px ) {
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin: 0;
+        width: 100%;
+        padding:0 20px;
+    }
+    .servicios .block{
+        margin-left: 0;
+        width: 98%;
+    }
+
+    .servicios p{
+        font-size: 2rem;
+    }
+    .servicios h3{
+        font-size: 2.4rem;
+    }
+    /*SLIDER*/
+    li{
+        width: 10%;
+    }
+    .slider img{
+        width: 35%;
+    }
+    /*IMAGEN FONDO*/
+    .slider{
+        width: 92%;
+        background-position: center center;
+    }
+}
+
+@media (max-width:600px ) {
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        margin: 0;
+        width: 100%;
+        padding:0 20px;
+    }
+    .servicios .block{
+        margin-left: 0;
+        width: 98%;
+    }
+
+    .servicios p{
+        font-size: 1.6rem;
+    }
+    .servicios h3{
+        font-size: 1.9rem;
+    }
+}
